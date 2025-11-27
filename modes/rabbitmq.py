@@ -69,7 +69,6 @@ def _upload_alignment_to_s3(words_timestamps, additional, s3_config: S3Config) -
 
     payload = {
         "results": words_timestamps,
-        "meta": additional,
     }
     body = json.dumps(payload).encode("utf-8")
 
